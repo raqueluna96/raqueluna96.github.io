@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Raquel Luna">
 
-<title>About – Raquel Luna</title>
+<title>Assignment3 – Raquel Luna</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -175,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">About</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Assignment3</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -201,8 +237,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#raquel-luna" id="toc-raquel-luna" class="nav-link active" data-scroll-target="#raquel-luna">Raquel Luna</a></li>
-  <li><a href="#about-this-website" id="toc-about-this-website" class="nav-link" data-scroll-target="#about-this-website">About this Website</a></li>
+  <li><a href="#assignment-3-mapping-census-data" id="toc-assignment-3-mapping-census-data" class="nav-link active" data-scroll-target="#assignment-3-mapping-census-data">Assignment 3 : Mapping Census Data</a>
+  <ul class="collapse">
+  <li><a href="#api-key" id="toc-api-key" class="nav-link" data-scroll-target="#api-key">1) API key</a></li>
+  <li><a href="#explore-variables" id="toc-explore-variables" class="nav-link" data-scroll-target="#explore-variables">2) Explore variables</a></li>
+  <li><a href="#view-a-few-example-codes" id="toc-view-a-few-example-codes" class="nav-link" data-scroll-target="#view-a-few-example-codes">View a few example codes</a></li>
+  <li><a href="#parameters" id="toc-parameters" class="nav-link" data-scroll-target="#parameters">3) Parameters</a></li>
+  <li><a href="#download" id="toc-download" class="nav-link" data-scroll-target="#download">4) Download</a></li>
+  <li><a href="#wide-format-for-convenience" id="toc-wide-format-for-convenience" class="nav-link" data-scroll-target="#wide-format-for-convenience">5) Wide format for convenience</a></li>
+  <li><a href="#map" id="toc-map" class="nav-link" data-scroll-target="#map">6) Map</a></li>
+  <li><a href="#table-topbottom-by-poverty-count" id="toc-table-topbottom-by-poverty-count" class="nav-link" data-scroll-target="#table-topbottom-by-poverty-count">7) Table (top/bottom by poverty count)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -211,13 +256,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Assignment3</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Raquel Luna </p>
+          </div>
+  </div>
     
   
     
@@ -228,18 +279,167 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="raquel-luna" class="level2">
-<h2 class="anchored" data-anchor-id="raquel-luna">Raquel Luna</h2>
-<p>Currently a graduate student at The University of Texas at Dallas (UTD). In my last semester in the Social Data Analytics and Research Masters (SDAR) program within the school of Economic, Political, and Policy Sciences (EPPS.)</p>
-<p>While completing my graduate education I also work full time as Project Coordinator at Partner Engineering and Science Inc.&nbsp;in the Due Diligence department focusing on Phase I Environmental (ESA) and Property Condition Assessment (PCA) data entry, reports and administrative tasks.</p>
-<p>Combined with my educational and professional experience this in turn has also helped improve my GISC studies and hands on learning as they are applied to my everyday work flow.</p>
+<section id="assignment-3-mapping-census-data" class="level1">
+<h1>Assignment 3 : Mapping Census Data</h1>
+<p>This assignment retrieves ACS 2023 5-year estimates from the U.S. Census Bureau using the <code>tidycensus</code> package. I selected Texas counties as the geography and used two ACS variables: median household income and poverty count. A choropleth map visualizes income, while a table lists the counties with the highest and lowest poverty counts.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidycensus)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tigris)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">tigris_use_cache =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="api-key" class="level2">
+<h2 class="anchored" data-anchor-id="api-key">1) API key</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">census_api_key</span>(<span class="st">"326daf02214d3d3502dd97b6d473e77a82baf1c2"</span>, <span class="at">install =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="about-this-website" class="level2">
-<h2 class="anchored" data-anchor-id="about-this-website">About this Website</h2>
-<p>Here you will find my coursework assignments for multiple courses done in my graduate studies related to the SDAR program.</p>
-<pre><code></code></pre>
+<section id="explore-variables" class="level2">
+<h2 class="anchored" data-anchor-id="explore-variables">2) Explore variables</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>vars <span class="ot">&lt;-</span> <span class="fu">load_variables</span>(<span class="dv">2023</span>, <span class="st">"acs5"</span>, <span class="at">cache =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="view-a-few-example-codes" class="level2">
+<h2 class="anchored" data-anchor-id="view-a-few-example-codes">View a few example codes</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>vars <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="fu">grepl</span>(<span class="st">"^B19"</span>, name)) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 4
+   name        label                                concept            geography
+   &lt;chr&gt;       &lt;chr&gt;                                &lt;chr&gt;              &lt;chr&gt;    
+ 1 B19001A_001 Estimate!!Total:                     Household Income … tract    
+ 2 B19001A_002 Estimate!!Total:!!Less than $10,000  Household Income … tract    
+ 3 B19001A_003 Estimate!!Total:!!$10,000 to $14,999 Household Income … tract    
+ 4 B19001A_004 Estimate!!Total:!!$15,000 to $19,999 Household Income … tract    
+ 5 B19001A_005 Estimate!!Total:!!$20,000 to $24,999 Household Income … tract    
+ 6 B19001A_006 Estimate!!Total:!!$25,000 to $29,999 Household Income … tract    
+ 7 B19001A_007 Estimate!!Total:!!$30,000 to $34,999 Household Income … tract    
+ 8 B19001A_008 Estimate!!Total:!!$35,000 to $39,999 Household Income … tract    
+ 9 B19001A_009 Estimate!!Total:!!$40,000 to $44,999 Household Income … tract    
+10 B19001A_010 Estimate!!Total:!!$45,000 to $49,999 Household Income … tract    </code></pre>
+</div>
+</div>
+</section>
+<section id="parameters" class="level2">
+<h2 class="anchored" data-anchor-id="parameters">3) Parameters</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>state_abbr <span class="ot">&lt;-</span> <span class="st">"TX"</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>geo_level  <span class="ot">&lt;-</span> <span class="st">"county"</span>   <span class="co"># options: state, county, tract, block group</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>my_vars <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">home_value =</span> <span class="st">"B25077_001"</span>, <span class="at">unemployment =</span> <span class="st">"B23025_005"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>year_acs   <span class="ot">&lt;-</span> <span class="dv">2023</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>survey     <span class="ot">&lt;-</span> <span class="st">"acs5"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="download" class="level2">
+<h2 class="anchored" data-anchor-id="download">4) Download</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>acs <span class="ot">&lt;-</span> <span class="fu">get_acs</span>(</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">geography =</span> geo_level,</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">variables =</span> my_vars,</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">state =</span> state_abbr,</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">year =</span> year_acs,</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">survey =</span> survey,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">geometry =</span> <span class="cn">TRUE</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="wide-format-for-convenience" class="level2">
+<h2 class="anchored" data-anchor-id="wide-format-for-convenience">5) Wide format for convenience</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>acs_wide <span class="ot">&lt;-</span> acs <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_wider</span>(</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">id_cols =</span> <span class="fu">c</span>(GEOID, NAME, geometry),</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_from =</span> variable,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> <span class="fu">c</span>(estimate, moe)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="map" class="level2">
+<h2 class="anchored" data-anchor-id="map">6) Map</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(acs_wide) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">fill =</span> estimate_home_value), <span class="at">color =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_c</span>(<span class="at">name =</span> <span class="st">"Median Home Value"</span>) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste0</span>(<span class="st">"ACS "</span>, year_acs, <span class="st">" 5-year: Median Home Value – "</span>, state_abbr, <span class="st">" ("</span>, geo_level, <span class="st">")"</span>),</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Source: U.S. Census Bureau via tidycensus"</span>) <span class="sc">+</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">text=</span><span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"Palatino"</span>),</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), <span class="at">legend.position =</span> <span class="st">"inside"</span>,</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position.inside =</span> <span class="fu">c</span>(<span class="fl">0.2</span>, <span class="fl">0.15</span>)) <span class="co"># move legend inside the chart</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Assignment3_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="table-topbottom-by-poverty-count" class="level2">
+<h2 class="anchored" data-anchor-id="table-topbottom-by-poverty-count">7) Table (top/bottom by poverty count)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>top10 <span class="ot">&lt;-</span> acs_wide <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(estimate_unemployment)) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(NAME, estimate_unemployment, moe_unemployment) <span class="sc">|&gt;</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">10</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>bottom10 <span class="ot">&lt;-</span> acs_wide <span class="sc">|&gt;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(estimate_unemployment) <span class="sc">|&gt;</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(NAME, estimate_unemployment, moe_unemployment) <span class="sc">|&gt;</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">10</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>top10</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 10 features and 3 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -106.6456 ymin: 26.03642 xmax: -94.9085 ymax: 33.43045
+Geodetic CRS:  NAD83
+# A tibble: 10 × 4
+   NAME         estimate_unemployment moe_unemployment                  geometry
+   &lt;chr&gt;                        &lt;dbl&gt;            &lt;dbl&gt;        &lt;MULTIPOLYGON [°]&gt;
+ 1 Harris Coun…                158268             4767 (((-94.97839 29.68365, -…
+ 2 Dallas Coun…                 67955             2797 (((-97.03852 32.56, -97.…
+ 3 Bexar Count…                 56081             2503 (((-98.80655 29.69071, -…
+ 4 Tarrant Cou…                 53014             2568 (((-97.55053 32.56258, -…
+ 5 Travis Coun…                 33873             2448 (((-98.15927 30.37665, -…
+ 6 Hidalgo Cou…                 28197             1871 (((-98.58634 26.25824, -…
+ 7 Collin Coun…                 25247             1528 (((-96.8441 32.98891, -9…
+ 8 El Paso Cou…                 24609             1658 (((-106.6455 31.89867, -…
+ 9 Fort Bend C…                 21887             1565 (((-96.08891 29.60166, -…
+10 Denton Coun…                 21327             1762 (((-97.39826 32.99996, -…</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>bottom10</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 10 features and 3 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -104.98 ymin: 26.598 xmax: -97.29015 ymax: 35.18326
+Geodetic CRS:  NAD83
+# A tibble: 10 × 4
+   NAME         estimate_unemployment moe_unemployment                  geometry
+   &lt;chr&gt;                        &lt;dbl&gt;            &lt;dbl&gt;        &lt;MULTIPOLYGON [°]&gt;
+ 1 Jeff Davis …                     0               15 (((-104.9796 30.62936, -…
+ 2 King County…                     0               15 (((-100.5187 33.83565, -…
+ 3 Loving Coun…                     0               15 (((-103.9839 31.99411, -…
+ 4 Kenedy Coun…                     0               15 (((-97.39839 26.86789, -…
+ 5 McMullen Co…                     0               15 (((-98.80251 28.10305, -…
+ 6 Edwards Cou…                     0               15 (((-100.7004 30.28828, -…
+ 7 Terrell Cou…                     0               15 (((-102.5669 30.28327, -…
+ 8 Donley Coun…                     0               15 (((-101.0908 34.74981, -…
+ 9 Briscoe Cou…                     0               15 (((-101.4721 34.43408, -…
+10 Borden Coun…                     1                2 (((-101.6913 32.96184, -…</code></pre>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
